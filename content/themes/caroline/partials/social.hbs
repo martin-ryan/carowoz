@@ -1,0 +1,77 @@
+
+
+<div class="container-social">
+  <img class="facebook" src="/content/images/icons/facebook.png" alt="" />
+  <img class="twitter" src="/content/images/icons/twitter.png" alt="" />
+  <img class="instagram" src="/content/images/icons/instagram.png" alt="" />
+</div>
+
+
+<script type="text/javascript">
+
+var social = {
+
+  buttonsArr: document.getElementsByTagName("img"),
+  animDuration: .3,
+  ease: "ease-out",
+  initialize: function() {
+    for (var i = 0; i < this.buttonsArr.length; i++) {
+      this.buttonsArr[i].style.transition = "background-color " + this.animDuration + "s " + this.ease;
+    }
+  }
+
+};
+
+social.initialize( );
+
+</script>
+
+
+<style>
+
+/*.container-social {
+  position: absolute;
+  left: 0px;
+  top: 100px;
+  z-index: 100;
+}*/
+
+.container-social img {
+  display: inline-block;
+  height: auto;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.facebook {
+  background-color: rgba(92, 130, 209, .7);
+}
+
+.facebook:hover {
+  background-color: rgba(92, 130, 209, 1);
+}
+
+.twitter {
+  background-color: rgba(64, 191, 245, .7);
+}
+
+.twitter:hover {
+  background-color: rgba(64, 191, 245, 1);
+}
+
+.instagram {
+  background-color: rgba(84, 139, 182, .7);
+}
+
+.instagram:hover {
+  background-color: rgba(84, 139, 182, 1);
+}
+
+@media (min-width: 640px) {
+  .container-social img {
+    width: 60px;
+  }
+}
+
+</style>

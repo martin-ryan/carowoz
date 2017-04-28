@@ -1,0 +1,27 @@
+<!--
+
+Classes:
+bootcol-classes
+custom-height
+firstlline-copy
+bg-position
+
+-->
+
+<div id="{{container-id}}" class="container-fluid {{container-classes}}">
+	<div class="row">
+		<div class="col-xsp-12 {{bootcol-classes}}">
+
+			<img data-mh="{{data-mh}}" id="{{img-id}}" class="hidden-xsp img-responsive {{img-classes}}" src="{{#if custom-header}}{{custom-header}}{{else}}{{#posts}}{{image}}{{/posts}}{{#post}}{{image}}{{/post}}{{/if}}" alt="" />
+
+			<div data-mh="{{data-mh}}" id="{{div-id}}" class="visible-xsp img-bg header-image {{div-classes}}" style="background-image:url({{#if custom-header}}{{custom-header}}{{else}}{{#posts}}{{image}}{{/posts}}{{#post}}{{image}}{{/post}}{{/if}});background-position:{{bg-position}}"></div>
+
+			<div class="header-copy" style="top:{{copy-top}}">
+				<h3 style="color:white;">{{firstline-copy}}</h3>
+				<h1 id="{{title-id}}" class="header-title white bold-uppercase font-large"></h1>
+				<h2 id="{{subtitle-id}}" class="header-subtitle white"></h2>
+			</div>
+
+		</div>
+	</div>
+</div>

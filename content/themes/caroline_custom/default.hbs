@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    {{! Styles'n'Scripts }}
+    <!-- <link rel="stylesheet" type="text/css" href="{{asset "css/normalize.css"}}" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="{{asset "css/ghost.css"}}" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="{{asset "css/utilities.css"}}" /> -->
+    <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
+
+
+    {{! Ghost outputs important style and meta data with this tag }}
+    {{ghost_head}}
+</head>
+
+
+<body>
+  <div id="debug" class="hidden"></div>
+
+  <nav class="container-nav" style="z-index:1000">
+    {{navigation}}
+  </nav>
+
+  <section id="container-contact-form" class="container-contact-form hidden">
+    {{> contact-form}}
+  </section>
+
+  <section class="container-body">
+    {{{body}}}
+  </section>
+
+  <section class="container-footer">
+    {{> footer}}
+  </section>
+
+
+
+
+
+  {{!-- jQuery needs to come before `ghost_foot` so that jQuery can be used in code injection --}}
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script> -->
+
+  {{! Ghost outputs important scripts and data with this tag }}
+  {{ghost_foot}}
+
+  <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+  {{! The main JavaScript file for Casper }}
+  <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+
+</body>
+</html>

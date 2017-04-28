@@ -1,0 +1,29 @@
+.lightbox {
+	// /** Default lightbox to hidden */
+	display: none;
+
+	// /** Position and style */
+	background: rgba(0,0,0,0.8);
+	height: 100%;
+	left: 0;
+	position: fixed;
+	text-align: center;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+.lightbox img {
+	// /** Pad the lightbox image */
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 2%;
+}
+
+.lightbox:target {
+	// /** Remove default browser outline */
+	outline: none;
+
+	// /** Unhide lightbox **/
+	display: block;
+}

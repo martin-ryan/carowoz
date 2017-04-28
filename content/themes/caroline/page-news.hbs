@@ -1,0 +1,20 @@
+{{!< default}}
+
+
+<!-- Header -->
+
+{{> header-image bg-position="78%"}}
+
+
+<!-- Logo Lockup -->
+
+{{> logo-lockup}}
+
+
+<!-- Post -->
+
+{{#get "posts" limit="all" filter="tag:news"}}
+  {{#foreach posts}}
+    {{> post-news}}
+  {{/foreach}}
+{{/get}}

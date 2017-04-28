@@ -1,0 +1,89 @@
+{{!< default}}
+
+{{> header-post}}
+
+{{#post}}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 col-lg-8 col-lg-offset-2">
+
+        <div class="row top-spacer-50-sm">
+          <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 text-center">
+            <h1 class="visible-lg bold-uppercase h1-font-size-sumo">{{title}}</h1>
+            <h1 class="visible-md bold-uppercase font-larger">{{title}}</h1>
+            <h1 class="visible-sm bold-uppercase">{{title}}</h1>
+            <h3 class="visible-xs bold-uppercase">{{title}}</h3>
+            </br>
+            <span class="bold-uppercase">Published {{date format='MMMM DD, YYYY'}}</span>
+          </div>
+        </div>
+
+        <div class="row row-top-spacer-sm">
+          <div data-mh="post-content" class="col-sm-1 col-sm-offset-1 gradient-post-content-sides"></div>
+          <div data-mh="post-content" class="col-sm-8">
+            {{content}}
+          </div>
+          <div data-mh="post-content" class="col-sm-1 gradient-post-content-sides"></div>
+        </div>
+
+        <div class="row">
+          <h4 class="text-center">Share this post</h4>
+          <div class="col-xsp-12 col-xsp-offset-0 col-xs-12 col-xs-offset-0 text-center">
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <img class="img-responsive share-icon" src="{{asset "images/icons/facebook.svg"}}" alt="" />
+            </a>
+            <a href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <img class="img-responsive share-icon" src="{{asset "images/icons/twitter.svg"}}" alt="" />
+            </a>
+            <a href="https://plus.google.com/share?url={{url absolute="true"}}"
+               onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+               <img class="img-responsive share-icon" src="{{asset "images/icons/googleplus.svg"}}" alt="" />
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row row-top-spacer">
+      {{#next_post}}
+        <a data-mh="prevnext-post" href="{{url}}" class="col-xs-12 col-sm-6 post-readnext post-readnext-padding" style="background-image: url({{image}})">
+          <div class="post-readnext-copy">
+            <h4 class="white padding">Read Next</h4>
+            <h2 class="post-readnext-title bold-uppercase secondary-dull padding">{{title}}</h2>
+            <p class="post-readnext-excerpt white padding">{{excerpt words="19"}}...</p>
+            <!-- VIEW POST BUTTON -->
+            <h4 class="text-center bold-uppercase white">-&nbsp;&nbsp;&nbsp;VIEW POST&nbsp;&nbsp;&nbsp;-</h4>
+          </div>
+        </a>
+      {{else}}
+      <div data-mh="prevnext-post" class="col-xs-12 col-sm-6 post-readnext-padding bg-clay-line img-bg">
+        <h1>YOU'RE CURRENTLY VIEWING THE MOST RECENT POST</h1>
+        <h3>Check out previous posts ></h3>
+      </div>
+      {{/next_post}}
+      {{#prev_post}}
+        <a data-mh="prevnext-post" href="{{url}}" class="post-readnext post-readnext-padding col-xs-12 col-sm-6" style="background-image: url({{image}})">
+          <div class="post-readnext-copy">
+            <h4 class="white padding">You Might Also Like</h4>
+            <h2 class="post-readnext-title bold-uppercase secondary-dull padding">{{title}}</h2>
+            <p class="post-readnext-excerpt white padding">{{excerpt words="19"}}...</p>
+            <!-- VIEW POST BUTTON -->
+            <h4 class="text-center bold-uppercase white">-&nbsp;&nbsp;&nbsp;VIEW POST&nbsp;&nbsp;&nbsp;-</h4>
+          </div>
+        </a>
+      {{else}}
+        <div data-mh="prevnext-post" class="col-xs-12 col-sm-6 post-readnext-padding bg-clay-line img-bg">
+          <h1>YOU'RE CURRENTLY VIEWING THE LAST POST</h1>
+          <h3>No more published posts.</h3>
+        </div>
+      {{/prev_post}}
+    </div>
+  </div>
+
+
+{{/post}}

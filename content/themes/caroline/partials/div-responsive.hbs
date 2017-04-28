@@ -1,0 +1,13 @@
+<div id="{{container-id}}" class="container-fluid {{container-classes}}">
+	<div class="row">
+
+			<div id="{{div-id}}" class="img-bg {{div-classes}}" style="background-image:url({{#if custom-image}}{{custom-image}}{{else}}{{#posts}}{{image}}{{/posts}}{{#post}}{{image}}{{/post}}{{/if}});background-position:{{bg-position}}"></div>
+
+			<div class="header-copy" style="top:{{copy-top}}">
+				<h3 style="color:white;">{{firstline-copy}}</h3>
+				<h1 id="{{title-id}}" class="header-title white bold-uppercase font-large">{{title-copy}}</h1>
+				<h2 id="{{subtitle-id}}" class="header-subtitle white">{{subtitle-copy}}</h2>
+			</div>
+
+	</div>
+</div>

@@ -1,0 +1,29 @@
+<a href="{{url}}">
+  <div class="col-xs-12 nopadding {{custom-border}} {{custom-border-color}} img-bg-over {{custom-background}}">
+
+    <!-- LEFT COLUMN -->
+    <!-- ALL -->
+    <div class="col-xs-12 col-md-{{left-col-width}} img-bg" style="background-image:url({{image}});height:{{col-left-height}};">
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <!-- ALL -->
+    <div class="col-xs-12 col-md-{{right-col-width}} nopadding" style="height:{{col-right-height}};">
+      <div class="row" style="height:{{col-right-row-1-height}};">
+        <div class="col-xs-12" style="padding-top:{{custom-padding-top}};">
+          <{{header-size}} class="bold-uppercase white">{{title}}</{{header-size}}>
+        </div>
+        <div class="col-xs-12">
+          <p class=" white">
+            {{excerpt characters=excerpt-length}}...
+          </p>
+        </div>
+      </div>
+      <div class="row" style="height:{{col-right-row-2-height}};">
+        <div class="col-xs-12 vertical-center-table height-full text-center nopadding">
+          <h1 class="vertical-center-cell bold-uppercase white bg-primary">-&nbsp;&nbsp;&nbsp;VIEW POST&nbsp;&nbsp;&nbsp;-</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</a>

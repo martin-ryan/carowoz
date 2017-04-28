@@ -1,0 +1,49 @@
+$primary: rgb(30, 179, 175);
+$primary-darker: rgb(24, 145, 142);
+$primary-text: rgb(196, 252, 251);
+$accent: rgb(46, 238, 233);
+$accent-dull: rgb(150, 203, 203);
+$accent-dull-light: rgba(150, 203, 203, 0.3);
+$accent-light: rgb(200, 255, 255);
+$accent-darker: rgb(36, 196, 192);
+$footer-partners: #041d2a;
+$blockquote-border-color: rgb(179, 179, 179);
+$brand-primary: $primary;
+$brand-secondary: #7afffb;
+$brand-success: $primary-darker;
+$brand-info:            $primary-darker;
+$brand-warning:         $primary-darker;
+$brand-danger:          $primary-darker;
+$white: #fff;
+$black: #000;
+$footer-background: #03151f;
+$footer-color: #0a405d;
+$footer-color-hover: #195d82;
+$nav-border-width: 80px;
+$clay: #721313;
+$court-green: #721313;
+$court-blue: #721313;
+$hover-start: rgba(0, 0, 0, 0.7);
+$hover-end: rgba(0, 0, 0, 0.5);
+$hover-duration: .5s;
+$touch-bg-overlay: rgba(0, 0, 0, 0.6);
+$grey-light: rgb(209, 226, 226);
+$grey-dark: #222222;
+$photo-height: 112.5px;
+$photo-width: 200px;
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/raleway-regular.eot');
+  src: url('../fonts/raleway-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/raleway-regular.woff') format('woff'), url('../fonts/raleway-regular.ttf') format('truetype'), url('../fonts/raleway-regular.svg#ralewayregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/raleway-bold.eot');
+  src: url('../fonts/raleway-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/raleway-bold.woff') format('woff'), url('../fonts/raleway-bold.ttf') format('truetype'), url('../fonts/raleway-bold.svg#ralewaybold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}

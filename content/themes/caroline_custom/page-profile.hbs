@@ -1,0 +1,48 @@
+{{!< default}}
+
+{{> page-data}}
+
+{{#post}}
+
+  <div class="feature-image" style="background-image:url({{image}});background-position:center;"></div>
+
+{{/post}}
+
+
+
+{{#get "posts" limit="all" filter="tag:profile"}}
+
+  <main class="profile">
+    <p>
+      CAROLINE
+    </p>
+    <p>
+      "CARO"
+    </p>
+    <p>
+      WOZNIACKI
+    </p>
+
+    <div class="personal">
+      {{#posts.[0]}}
+        {{content}}
+      {{/posts.[0]}}
+    </div>
+
+    <p>CAREER HIGHLIGHTS</p>
+    <div class="highlights">
+      {{#posts.[1]}}
+        {{content}}
+      {{/posts.[1]}}
+    </div>
+
+    <p>BIOGRAPHY</p>
+    <div class="biography">
+      {{#posts.[2]}}
+        {{content}}
+      {{/posts.[2]}}
+    </div>
+
+  </main>
+
+{{/get}}

@@ -1,0 +1,133 @@
+<div class="contact">
+
+  <form class="ui form">
+    <div class="field">
+      <label>First Name</label>
+      <input type="text" name="first-name" placeholder="First Name">
+    </div>
+    <div class="field">
+      <label>Last Name</label>
+      <input type="text" name="last-name" placeholder="Last Name">
+    </div>
+    <div class="field">
+      <label>Text</label>
+      <textarea></textarea>
+    </div>
+    <button class="ui button" type="submit">Submit</button>
+  </form>
+
+</div>
+
+
+<style>
+
+  .contact {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: calc(100vw - (100vh / 8) - 15px);
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+  }
+
+  .contact .form {
+    position: relative;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+</style>
+
+
+
+
+<!-- <div class="row">
+  <div id="contact-btn" class="ui grey header">CONTACT</div>
+</div>
+
+
+<div id="contact-form-container">
+  <div id="topAnchor"></div>
+
+  <form id="contact-form" class="ui form">
+    <h4 class="ui dividing header"></h4>
+
+      <div class="field">
+        <label style="display:none;">Full Name</label>
+        <input type="text" placeholder="Name">
+      </div>
+
+      <div class="field">
+        <label style="display:none;">Your email</label>
+        <textarea rows="1" placeholder="Email"></textarea>
+      </div>
+
+      <div class="field">
+        <label style="display:none;">Subject one line</label>
+        <textarea rows="1" placeholder="Subject"></textarea>
+      </div>
+
+      <div class="field">
+        <label style="display:none;">Message body four lines</label>
+        <textarea rows="10" placeholder="Message"></textarea>
+      </div>
+  </form>
+
+  <div id="bottomAnchor"></div>
+</div>
+
+
+<script type="text/javascript">
+
+var contact = {
+//
+  button: document.getElementById("contact-btn"),
+  container: document.getElementById("contact-form-container"),
+  form: document.getElementById("contact-form"),
+  formHeight: null,
+  animDuration: .4,
+  hidden: true,
+  //
+  hide: function( ) {
+    this.container.style["max-height"] = "0px";
+    this.form.style.opacity = "0";
+    smoothScroll("topAnchor");
+    // setTimeout( function() { window.scrollBy( 0 , -500 ) } , this.animDuration * 1000);
+    this.hidden = true;
+  },
+  //
+  show: function( ) {
+    console.log(this.form.style.height);
+    this.container.style["max-height"] = this.formHeight;
+    this.form.style.opacity = "1";
+    smoothScroll("bottomAnchor");
+    // setTimeout( function() { window.scrollBy( 0 , 500 ) } , this.animDuration * 1000);
+    this.hidden = false;
+  },
+  //
+  initialize: function( ) {
+    let self = this;
+    this.formHeight = window.getComputedStyle(this.form).getPropertyValue("height");
+    this.button.style.cursor = "pointer";
+    this.container.style.overflow = "hidden";
+    this.container.style["max-height"] = "0px";
+    this.container.style.transition = "max-height " + this.animDuration + "s ease-in-out";
+    this.form.style.opacity = "0";
+    this.form.style.transition = "opacity " + this.animDuration + "s ease-in-out";
+    this.button.onclick = function( ) {
+      self.hidden ? self.show( ) : self.hide( );
+    };
+  }
+};
+
+contact.initialize( );
+
+</script>
+
+
+<style media="screen">
+
+</style> -->

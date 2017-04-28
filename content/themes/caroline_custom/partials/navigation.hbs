@@ -1,0 +1,164 @@
+<nav class="static-nav clearfix">
+
+  <div class="right-nav">
+    <a href="/">
+      <div class="nav-item home-button"></div>
+    </a>
+    <div id="menu-button" class="nav-item menu-button"></div>
+  </div>
+
+  <div class="social-nav">
+    <a href="#">
+      <div class="nav-item facebook"></div>
+    </a>
+    <a href="#">
+      <div class="nav-item instagram"></div>
+    </a>
+    <a href="#">
+      <div class="nav-item twitter"></div>
+    </a>
+  </div>
+
+  <div id="menu-title" class="menu-title">
+    <p id="title-section-output">
+      {{#foreach navigation}}
+        {{#if current}}
+          {{label}}
+        {{/if}}
+      {{/foreach}}
+    </p>
+    <p id="title-message"></p>
+
+  </div>
+
+</nav>
+
+
+
+<nav id="menu-grid" class="menu-grid portrait-off hidden">
+  <a href="/news/">
+    <div class="nav-item"><span>NEWS</span></div>
+  </a>
+
+  <a href="/schedule/">
+    <div class="nav-item"><span>SCHEDULE</span></div>
+  </a>
+
+  <a href="/profile/">
+    <div class="nav-item"><span>PROFILE</span></div>
+  </a>
+
+  <a href="/photos/">
+    <div class="nav-item"><span>PHOTOS</span></div>
+  </a>
+
+  <a href="/partners/">
+    <div class="nav-item"><span>PARTNERS</span></div>
+  </a>
+
+  <a href="/philanthropy/">
+    <div class="nav-item philanthropy"><span>PHILANTHROPY</span></div>
+  </a>
+</nav>
+
+<nav id="menu-grid-portrait" class="menu-grid-portrait landscape-off hidden">
+
+  <a href="/news/">
+    <p>
+      NEWS
+    </p>
+  </a>
+
+  <a href="/schedule/">
+    <p>
+      SCHEDULE
+    </p>
+
+  <a href="/profile/">
+    <p>
+    PROFILE
+    </p>
+  </a>
+
+  <a href="/photos/">
+    <p>
+    PHOTOS
+    </p>
+  </a>
+
+  <a href="/partners/">
+    <p>
+      PARTNERS
+    </p>
+  </a>
+
+  <a href="/philanthropy/">
+    <p>
+      PHILANTHROPY
+    </p>
+  </a>
+
+</nav>
+
+
+
+<script type="text/javascript">
+
+
+// var menuButton = (function() {
+//
+//   var button = document.getElementById("menu-button");
+//   var menu = document.getElementById("menu-grid");
+//   var mobileMenu = document.getElementById("menu-grid-portrait");
+//   var menuTitle = document.getElementById("menu-title");
+//
+//   button.onclick = function() {
+//     menu.classList.contains("hidden") ? menu.classList.remove("hidden") : menu.classList.add("hidden");
+//     mobileMenu.classList.contains("hidden") ? mobileMenu.classList.remove("hidden") : mobileMenu.classList.add("hidden");
+//     if (window.innerWidth < window.innerHeight) {
+//       menuTitle.classList.contains("hidden") ? menuTitle.classList.remove("hidden") : menuTitle.classList.add("hidden");
+//     }
+//
+//   };
+//
+// }());
+
+// window.onresize = function (){
+//
+//   var menuTitle = document.getElementById("menu-title");
+//   var mobileMenu = document.getElementById("menu-grid-portrait");
+//   //
+//   // if LANDSCAPE show MenuTitle
+//   if (window.innerHeight < window.innerWidth) {
+//     menuTitle.classList.remove("hidden");
+//   //
+//   // if PORTRAIT and SubMenu is visible
+//   } else if (window.innerWidth < window.innerHeight) {
+//     if (mobileMenu.classList.contains("hidden") != true) {
+//       menuTitle.classList.add("hidden");
+//     }
+//   }
+
+// };
+
+</script>
+
+
+<!-- {{#foreach navigation}}
+<div class="nav-helper hidden">
+  <p>
+    LABEL: <span>{{label}}</span>
+  </p>
+  <p>
+    URL: <span>{{url}}</span>
+  </p>
+  <p>
+    CURRENT: <span>{{current}}</span>
+  </p>
+  <p>
+    SLUG: <span>{{slug}}</span>
+  </p>
+</div>
+
+
+{{/foreach}} -->

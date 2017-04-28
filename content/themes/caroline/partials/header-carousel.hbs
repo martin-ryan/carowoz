@@ -1,0 +1,28 @@
+<!-- Carousel -->
+<div class="position-relative page-header-container">
+
+	{{#get "posts" slug="home"}}
+
+		{{#posts}}
+			{{content}}
+		{{/posts}}
+
+		{{> div-responsive container-id="header-container-0" container-classes="carousel-container active" div-id="header-div-0" div-classes="page-header-image" bg-position="center center"}}
+
+		{{> div-responsive container-id="header-container-1" container-classes="carousel-container" div-id="header-div-1" div-classes="page-header-image" bg-position="40%"}}
+
+		{{> div-responsive container-id="header-container-2" container-classes="carousel-container" div-id="header-div-2" div-classes="page-header-image" bg-position="95% top"}}
+
+		{{> div-responsive container-id="header-container-3" container-classes="carousel-container" div-id="header-div-3" div-classes="page-header-image" bg-position="15% bottom"}}
+
+		{{> div-responsive container-id="header-container-4" container-classes="carousel-container" div-id="header-div-4" div-classes="page-header-image" bg-position="60% center"}}
+
+		{{> div-responsive container-id="header-container-5" container-classes="carousel-container" div-id="header-div-5" div-classes="page-header-image" bg-position="center center"}}
+
+	{{/get}}
+
+  <div class="container-fluid header-nav">
+    {{navigation}}
+  </div>
+
+</div>

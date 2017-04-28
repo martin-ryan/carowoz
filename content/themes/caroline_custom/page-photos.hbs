@@ -1,0 +1,36 @@
+{{!< default}}
+
+
+{{#post}}
+
+<div class="feature-image" style="background-image:url({{image}});background-position:center;"></div>
+
+<main>
+  {{content}}
+  <div id="photos-container" class="photos-container"></div>
+</main>
+
+{{/post}}
+
+
+<script type="text/javascript">
+
+  function htmlToElement(html) {
+      var template = document.createElement('template');
+      template.innerHTML = html;
+      return template.content.firstChild;
+  }
+
+  var photos = document.getElementById("photos"),
+      container = document.getElementById("photos-container");
+
+  for (var i = 0; i < photos.children.length; i++) {
+    var source = photos.children[i].src;
+    var linkedPhoto = htmlToElement("<div><a href=\"" + source + "\">" + "<img src=\"" + source + "\">" + "</a></div>");
+
+    container.appendChild(linkedPhoto);
+  }
+
+  photos.innerHTML = "";
+
+</script>

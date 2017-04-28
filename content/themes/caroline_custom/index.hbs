@@ -1,0 +1,52 @@
+{{!< default}}
+
+{{#get "posts" limit="1" filter="tag:home"}}
+  {{#posts}}
+   {{content}}
+  {{/posts}}
+{{/get}}
+
+<div id="feature-image-landing" class="feature-image feature-image-first"></div>
+
+<img id="feature-lockup" class="feature-lockup" src="/content/images/lockups/landing.svg" alt="" />
+
+<main class="landing">
+
+  <section>
+    {{#get "posts" limit="1" filter="tag:news"}}
+      {{#posts}}
+
+        <div class="news">
+          <img src="{{image}}" alt="" />
+          <div class="corner-tab">
+            {{date published_at format="MMMM"}}
+            {{date published_at format="DD"}}
+          </div>
+          <p>
+            <a href="{{url}}">{{title}}</a>
+          </p>
+      </div>
+
+      {{/posts}}
+    {{/get}}
+  </section>
+
+  <section>
+    {{#get "posts" limit="1" filter="tag:schedule"}}
+      {{#posts}}
+
+        <div class="schedule">
+          <img src="{{image}}" alt="" />
+          <div class="next-match">
+            <p></p>
+            {{content}}
+          </div>
+          <div class="corner-tab">
+            Next Match
+          </div>
+        </div>
+
+      {{/posts}}
+    {{/get}}
+  </section>
+</main>

@@ -1,0 +1,24 @@
+{{!< default}}
+
+{{#get "posts" limit="1" filter="tag:schedule"}}
+
+  {{#foreach posts}}
+
+    <div class="feature-image" style="background-image:url({{image}});background-position:center;"></div>
+    <div class="next-match">
+      <p>Next Match</p>
+      {{content}}
+    </div>
+
+  {{/foreach}}
+
+
+{{/get}}
+
+{{#post}}
+
+  <main class="schedule">
+    {{content}}
+  </main>
+
+{{/post}}

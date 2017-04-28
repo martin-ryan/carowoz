@@ -1,0 +1,386 @@
+/* Small Phone (iPhone 4) ----------------------------
+------------------------------------------------------------ */
+@media only screen
+and (orientation : landscape) {
+
+  .feature-lockup {
+    position: absolute;
+    height: auto;
+    margin: 0;
+    width: 46vw;
+    right: 5%;
+    top: 41%;
+  }
+
+  main {
+    margin: 5vw auto 5vw auto;
+    width: 80vw;
+  }
+
+  .personal table, .highlights table {
+    width: 60vw;
+    margin: 30px auto 30px auto;
+  }
+
+  .personal table tbody tr td:first-child,
+  .highlights table tbody tr td:first-child {
+    text-align: right;
+    font-weight: bold;
+    width: 30%;
+    font-size: 1rem;
+    color: gray;
+  }
+
+  .personal table tbody tr td:last-child,
+  .highlights table tbody tr td:last-child {
+    font-size: 1.2rem;
+  }
+
+  .biography {
+    width: 70vw;
+    margin: auto;
+  }
+
+
+
+  .menu-title {
+    background: none;
+    padding-top: 18px;
+  }
+
+  .menu-title p {
+    display: block;
+
+  }
+
+  .menu-title p:first-child {
+    display: block;
+    margin: 0;
+  }
+
+  .menu-title p:last-child {
+    font-weight: normal;
+    width: auto;
+    margin: -3px 0 0 0;
+  }
+
+  .next-match {
+    top: 50%;
+  }
+
+  .next-match p:nth-child(2) {
+    font-size: 2rem;
+  }
+
+  .schedule table tbody tr td:first-child p {
+    margin: 6px 0 6px 0;
+  }
+
+  .landscape-off {
+    display: none;
+  }
+
+  img.portrait-off {
+    display: inline-block;
+  }
+
+  .portrait-off {
+    display: block;
+  }
+
+  .feature-image {
+    height: 100vh;
+    background-position: center;
+  }
+
+  .feature-image img {
+    width: 40%;
+    height: auto;
+    margin: 20% auto auto 50%;
+  }
+
+  .menu-grid {
+    width: 100vw;
+    float: right;
+  }
+
+  .menu-grid .nav-item {
+    height: 20vh;
+    width: 40vh;
+    float: right;
+    text-align: center;
+    display: table;
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+
+  .menu-grid .nav-item span {
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: bold;
+    // font-size: .6rem;
+  }
+
+  .facebook, .instagram, .twitter, .menu-button, .home-button, .googleplus {
+    width: 20vh;
+    height: 20vh;
+    float: left;
+  }
+
+  .social-nav {
+    float: left;
+  }
+
+  // FOOTER ---------------------------------//////
+
+  // .footer p img {
+  //   width: 70px;
+  // }
+  //
+  // .site-details > p {
+  //   display: inline-block;
+  //   width: 200px;
+  //   padding: 20px 0 20px 0;
+  // }
+
+  // NEWS ---------------------------------//////
+
+  .landing .news p a {
+    font-size: 1.8rem;
+  }
+
+  .news a {
+    font-size: 1.9rem;
+    line-height: 1.5;
+  }
+
+  .container-post-detail  {
+    width: 80vw;
+  }
+
+}
+
+
+@media screen
+and (min-aspect-ratio: 16/9) {
+
+}
+
+@media screen
+and (min-aspect-ratio: 4/3) {
+
+}
+
+
+//
+/* Tablet Small ----------------------------
+------------------------------------------------------------ */
+@media only screen
+and (min-width : 800px)
+and (min-height : 600px)
+and (orientation : landscape) {
+
+  .facebook, .instagram, .twitter, .menu-button, .home-button, .googleplus {
+      width: 15vh;
+      height: 15vh;
+      float: left;
+  }
+
+  .container-post-detail  {
+    width: 80vw;
+  }
+
+
+}
+
+
+/* Tablet Large ----------------------------
+------------------------------------------------------------ */
+
+// landscape handled by laptop 1025px+, portrait is still defined
+
+
+/* Small Display ------------------------ */
+@media only screen
+and (min-width : 1025px)
+and (orientation : landscape) {
+
+
+  .personal {
+    margin-top: 40px;
+  }
+
+  .personal table tbody tr td:first-child,
+  .highlights table tbody tr td:first-child {
+    width: 40%;
+  }
+
+  .personal table tbody tr td:last-child,
+  .highlights table tbody tr td:last-child {
+    font-size: 1.5rem;
+  }
+
+  .profile {
+    text-align: center;
+  }
+
+  .profile p {
+    display: inline-block;
+    text-align: center;
+    margin: auto 10px auto 10px;
+    // vertical-align: middle;
+  }
+
+  .profile > p:nth-child(1) {
+    font-size: 5rem;
+  }
+
+  .profile > p:nth-child(2) {
+    font-size: 5.5rem;
+  }
+
+
+  .profile > p:nth-child(3) {
+    font-size: 5rem;
+  }
+
+  .biography p {
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 2;
+  }
+
+  .next-match p {
+    line-height: 1;
+  }
+
+  .next-match p:nth-child(2n + 1) {
+    font-size: 2rem;
+  }
+
+  .next-match p:nth-child(2) {
+    font-size: 4rem;
+  }
+
+  .menu-title p:first-child {
+    font-size: 2rem;
+  }
+
+  .menu-title p:last-child {
+    font-size: 1rem;
+    margin: 2px 0 auto 0;
+  }
+
+  .news .datestamp {
+    width: 150px;
+    height: 70px;
+  }
+
+  .news .datestamp span {
+    display: table-cell;
+    height: 70px;
+    width: 150px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .news > p:first-child {
+    font-size: 3rem;
+    margin: 20px 0 20px 0;
+  }
+
+  .news a {
+    font-size: 3rem;
+    line-height: 1.1;
+  }
+
+  .news p {
+    margin: 20px 0 0 0;
+  }
+
+  .news p:last-child {
+    margin: 10px 0 0 0;
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  main.section p {
+    width: 300px;
+    background-color: blue;
+  }
+
+  main.section p span {
+    display: inline;
+  }
+
+  .feature-image img {
+    margin: 23% auto auto 50%;
+  }
+
+  .social-nav {
+    float: left;
+  }
+
+  .container-nav {
+    left: 10vw;
+    right: 10vw;
+  }
+
+  .facebook, .instagram, .twitter, .menu-button, .home-button, .googleplus {
+    width: 100px;
+    height: 100px;
+  }
+
+  .menu-title {
+    width: 100vw;
+    height: 100px;
+  }
+
+  .menu-grid .nav-item {
+    height: 10vh;
+    width: 20vh;
+  }
+
+  .menu-grid .nav-item span {
+    font-size: .8rem;
+  }
+
+  .schedule table thead th,
+  .schedule table tbody tr td:first-child,
+  .schedule table tbody tr td:nth-child(2) {
+    font-size: 1rem;
+  }
+
+  .schedule table tbody tr td p {
+    margin: 6px 0 6px 0;
+  }
+
+  .corner-tab {
+      padding: 3% 5% 3% 5%;
+      font-size: 2rem;
+  }
+}
+
+/* Large Display ------------------------ */
+@media only screen
+and (min-width : 1440px)
+and (orientation : landscape) {
+  .menu-title span {
+    font-size: 2rem;
+  }
+
+  .menu-grid .nav-item span {
+    font-size: 1rem;
+  }
+
+  .container-post-detail  {
+    width: 70vw;
+    font-size: 1.5rem;
+  }
+  .facebook, .instagram, .twitter, .menu-button, .home-button, .googleplus {
+    width: 13vh;
+    height: 13vh;
+  }
+}

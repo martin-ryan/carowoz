@@ -1,0 +1,105 @@
+{{!< default}}
+
+{{#post}}
+
+<!-- <div id="title-message">
+  {{title}}
+</div> -->
+
+<div class="feature-image" style="background-image:url({{image}})"></div>
+
+<section class="container-post-detail">
+
+  <div class="title">
+    {{title}}
+  </div>
+
+  <div class="post-detail-content">
+    {{content}}
+  </div>
+
+  <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+
+  <section class="share">
+      <h4>Share this post</h4>
+
+      <a class="icon-google-plus" href="https://plus.google.com/share?url={{url absolute="true"}}"
+         onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+         <div class="nav-item googleplus"></div>
+      </a>
+
+      <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+          onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+          <div class="nav-item facebook"></div>
+      </a>
+
+      <a class="icon-twitter" href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}"
+          onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <div class="nav-item twitter"></div>
+      </a>
+
+  </section>
+
+</section>
+
+<aside class="read-next">
+    {{#next_post}}
+    <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+        <section class="post">
+            <h2>{{title}}</h2>
+            <p>{{excerpt words="19"}}&hellip;</p>
+        </section>
+    </a>
+    {{/next_post}}
+    {{#prev_post}}
+    <a class="read-next-story prev {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+        <section class="post">
+            <h2>{{title}}</h2>
+            <p>{{excerpt words="19"}}&hellip;</p>
+        </section>
+    </a>
+    {{/prev_post}}
+</aside>
+
+<!--
+<aside class="read-next">
+
+    {{#next_post}}
+      <div class="container-post">
+        <hgroup>
+          <a href="{{url}}">{{title}}</a>
+          <p>{{excerpt characters="200"}}</p>
+        </hgroup>
+
+        <figure style="background-image:url({{image}})">
+          <div class="datestamp">
+            <p>
+              {{date published_at format="MMMM"}}
+              {{date published_at format="DD"}}
+            </p>
+          </div>
+        </figure>
+      </div>
+    {{/next_post}}
+
+    {{#prev_post}}
+      <div class="container-post">
+        <hgroup>
+          <a href="{{url}}">{{title}}</a>
+          <p>{{excerpt characters="200"}}</p>
+        </hgroup>
+        <figure style="background-image:url({{image}})">
+          <div class="datestamp">
+            <p>
+              {{date published_at format="MMMM"}}
+              {{date published_at format="DD"}}
+            </p>
+          </div>
+        </figure>
+      </div>
+    {{/prev_post}}
+
+</aside> -->
+
+
+{{/post}}

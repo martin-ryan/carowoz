@@ -1,0 +1,27 @@
+{{#get "posts" filter="tag:partners"}}
+  {{#posts}}
+    {{content}}
+  {{/posts}}
+{{/get}}
+
+<div class="container-fluid">
+  <div class="row row-top-spacer footer-partners-background">
+		<div id="footer-partners" class="text-center"></div>
+  </div>
+  <div class="visible-xsp hidden-sm row row-padding-25 footer-links">
+    <div class="col-xsp-12 col-xsp-offset-0 text-center">
+      <a href="/contact"><h5 class="footer-button bold-uppercase">Contact</h5></a>
+    </div>
+    <div class="col-xsp-12 text-center">
+      <a href="http://lagardere-se.com/" target="_blank"><h5 class="footer-button bold-uppercase">Lagardere Sports &copy; {{date format="YYYY"}}</h5></a>
+    </div>
+    <div class="col-xsp-12 text-center">
+      <a href="#"><h5 class="footer-button bold-uppercase">Site by GSN</h5></a>
+    </div>
+  </div>
+  <div class="hidden-xsp text-center row row-padding-25 footer-links">
+    <a href="/contact"><h5 class="footer-button bold-uppercase">Contact</h5></a>
+    <a href="http://lagardere-se.com/" target="_blank"><h5 class="footer-button bold-uppercase">Lagardere Sports &copy; {{date format="YYYY"}}</h5></a>
+    <h5 class="footer-button bold-uppercase">Site by GSN</h5>
+  </div>
+</div>

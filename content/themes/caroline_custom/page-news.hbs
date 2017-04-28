@@ -1,0 +1,30 @@
+{{!< default}}
+
+{{> page-data}}
+{{#post}}
+  <div class="feature-image" style="background-image:url({{image}});background-position:center;">
+  </div>
+{{/post}}
+
+
+{{#get "posts" limit="6" filter="tag:news"}}
+  {{#foreach posts from="2" to="7"}}
+
+    <main class="news">
+      <img src="{{image}}" alt="" />
+      <div class="corner-tab">
+        <span>
+          {{date published_at format="MMMM"}}
+          {{date published_at format="DD"}}
+        </span>
+      </div>
+      <p>
+        <a href="{{url}}">{{title}}</a>
+      </p>
+      <p>{{excerpt characters="200"}}...</p>
+    </main>
+
+  {{/foreach}}
+{{/get}}
+
+<div class="load-more"></div>

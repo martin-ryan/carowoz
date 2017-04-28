@@ -1,0 +1,44 @@
+{{!< default}}
+
+
+<!-- Header -->
+
+{{> header-image bg-position="35%"}}
+
+
+<div class="row row-top-spacer text-center">
+  <div class="col-xsp-12 col-xsp-offset-0 col-xs-10 col-xs-offset-1">
+    <h1 class="bold-uppercase">philanthropy</h1>
+  </div>
+</div>
+
+<div class="row row-top-spacer">
+  <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+		{{#post}}
+	    {{> element-philanthropy-desc}}
+		{{/post}}
+  </div>
+</div>
+
+<div id="philo-images"></div>
+
+<!-- old example...delete if no bugs found in JS version-->
+<!-- <div class="row top-spacer-50">
+  <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+		{{> div-responsive div-classes="div-responsive" custom-image="/assets/images/philanthropy/philanthropy-4.jpg"}}
+  </div>
+</div>
+
+<!-- Philanthropy Stories -->
+<div class="row">
+  <div class="col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1 nopadding">
+    {{#get "posts" limit="all" filter="tag:philanthropy-story+page:true"}}
+      {{#foreach posts}}
+        <div id="philanthropy-story" class="col-xs-12 col-sm-6">
+          {{> element-philanthropy-story}}
+        </div>
+      {{/foreach}}
+    {{/get}}
+  </div>
+</div>
+

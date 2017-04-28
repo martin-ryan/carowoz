@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      {{! Document Settings }}
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+      {{! Page Meta }}
+      <title>{{meta_title}}</title>
+      <meta name="description" content="{{meta_description}}" />
+
+      <meta name="HandheldFriendly" content="True" />
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+      <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+
+      <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> -->
+
+      <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+      {{! Styles'n'Scripts }}
+      <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
+
+      {{! Ghost outputs important style and meta data with this tag }}
+      {{ghost_head}}
+  </head>
+
+  <body>
+
+    {{> dynamic-content}}
+
+    <div class="slidebar-top slidebar-top-custom-height" off-canvas="id-1 top push">
+      {{> slidebar-top}}
+    </div>
+
+    <div id="content-background" class="content-background" canvas="container">
+      {{{body}}}
+      {{> footer}}
+    </div>
+
+    <div id="photos-lightbox"></div>
+
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+
+    {{! Custom Bundle + Plugins }}
+    <script type="text/javascript" src="{{asset "js/jquery.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/bootstrap.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/slidebars.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/jquery.matchHeight.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/bundle.js"}}"></script>
+    <script>
+      ( function ( $ ) {
+        // Initialize Slidebars
+        var controller = new slidebars();
+        controller.init();
+
+        // Toggle Slidebars
+        $( '.toggle-id-1' ).on( 'click', function ( event ) {
+          // Stop default action and bubbling
+          event.stopPropagation();
+          event.preventDefault();
+
+          // Toggle the Slidebar with id 'id-1'
+          controller.toggle( 'id-1' );
+        } );
+
+      } ) ( jQuery );
+    </script>
+
+  </body>
+</html>

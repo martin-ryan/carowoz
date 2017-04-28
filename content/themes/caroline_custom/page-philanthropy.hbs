@@ -1,0 +1,18 @@
+{{!< default}}
+
+{{! This is a page template. A page outputs content just like any other post, and has all the same
+    attributes by default, but you can also customise it to behave differently if you prefer. }}
+
+{{! Everything inside the #post tags pulls data from the page }}
+{{#post}}
+
+  <div id="feature-image" class="feature-image" style="background-image:url({{image}});background-position:center;"></div>
+
+  <!-- <div class="container-philanthropy">
+    {{content}}
+  </div> -->
+  <main class="philanthropy">
+    {{content}}
+  </main>
+
+{{/post}}

@@ -1,0 +1,57 @@
+<div class="container-fluid">
+  <div class="row row-top-spacer row-bot-padding">
+		<a href="{{url}}">
+
+			<div class="col-xs-12 hidden-xs text-center">
+
+				{{#if @even}}
+  				<div class="img-bg news-post-img" style="background-image:url({{image}})"></div>
+				{{/if}}
+
+				<div class="bg-secondary-dull news-post-copy white">
+
+          <div class="visible-sm visible-md">
+  					<p class="bold-uppercase text-center white news-post-title">{{title}}
+              </br><span><small>Published {{date format='MMMM DD, YYYY'}}</small></span>
+            </p>
+  			    <p class="bg-white rule-height rule-width-70 margin-center"></p>
+  					<p>{{excerpt words="40"}}...</p>
+          </div>
+
+          <div class="vertical-center visible-lg">
+            <p class="bold-uppercase text-center white news-post-title">{{title}}
+              </br><span><small>Published {{date format='MMMM DD, YYYY'}}</small></span>
+            </p>
+            <p class="bg-white rule-height rule-width-70 margin-center"></p>
+            <p>{{excerpt words="40"}}...</p>
+          </div>
+
+				</div>
+
+				{{#if @odd}}
+				<div class="img-bg news-post-img" style="background-image:url({{image}})"></div>
+				{{/if}}
+
+			</div>
+
+
+      <div class="col-xs-12 visible-xs text-center">
+
+				<div class="img-bg news-post-img" style="background-image:url({{image}})"></div>
+
+				<div class="bg-secondary-dull news-post-copy white">
+          <p class="bold-uppercase text-center white news-post-title">{{title}}
+            </br><span><small>{{date format='MMMM DD, YYYY'}}</small></span>
+          </p>
+
+          <p class="bg-white rule-height rule-width-70 margin-center"></p>
+
+          <p class="nopadding">{{excerpt words="30"}}...</p>
+				</div>
+
+
+			</div>
+
+		</a>
+  </div>
+</div>

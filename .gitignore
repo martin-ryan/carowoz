@@ -1,0 +1,12 @@
+/*
+/node_modules/
+/core/
+/content/images
+/config.js
+!/.gitignore
+!/content/**.*
+!/content/*
+!/content/
+!/Gruntfile.js
+!/gulpfile.js
+!/helpers.js
