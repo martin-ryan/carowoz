@@ -6,7 +6,8 @@ var home = require('./home'),
 		partners = require('./partners'),
 		philanthropy = require('./philanthropy'),
 		footer = require('./footer'),
-		post = require('./post.js')
+		post = require('./post.js'),
+		contact = require('./contact')
 	;
 
 
