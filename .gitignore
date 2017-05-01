@@ -10,3 +10,5 @@
 !/Gruntfile.js
 !/gulpfile.js
 !/helpers.js
+!/index.js
+!/package.json
