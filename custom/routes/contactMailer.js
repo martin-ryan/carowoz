@@ -19,7 +19,7 @@ router.post('/', function (req, res) {
     // setup email data with unicode symbols
     let mailClient = {
         from: '"Contact" <contact@carolinewozniacki.com>', // sender address
-        to: 'cw.lagarderesports@gmail.com', // list of receivers
+        to: 'cw.lagarderesports@gmail.com, caroline@lagardere-se.com', // list of receivers
         subject: req.body.subject, // Subject line
         text:  req.body.message // plain text body
     };
