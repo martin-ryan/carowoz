@@ -25,18 +25,18 @@
 
   <div class="row row-top-spacer">
     <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-      <form>
+      <form method="post" action="/contactmailer">
         <div class="form-group">
-          <input type="text" required="required" class="form-control" id="exampleInputPassword1" placeholder="Name">
+          <input type="text" required="required" class="form-control" id="exampleInputPassword1" placeholder="Name" name="name">
         </div>
         <div class="form-group">
-          <input type="email" required="required" class="form-control" id="exampleInputEmail1" placeholder="Email">
+          <input type="email" required="required" class="form-control" id="exampleInputEmail1" placeholder="Email" name="email">
         </div>
         <div class="form-group">
-          <input type="text" required="required" class="form-control" id="exampleInputPassword1" placeholder="Subject">
+          <input type="text" required="required" class="form-control" id="exampleInputPassword1" placeholder="Subject" name="subject">
         </div>
         <div class="form-group">
-          <textarea class="form-control" required="required" rows="8" cols="40" placeholder="Message"></textarea>
+          <textarea class="form-control" required="required" rows="8" cols="40" placeholder="Message" name="message"></textarea>
         </div>
         <button type="submit" class="btn btn-primary btn-block bold-uppercase">SUBMIT</button>
       </form>

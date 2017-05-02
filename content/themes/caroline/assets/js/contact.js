@@ -8,7 +8,7 @@ var myModule = function ( options ) {
     }
 
     function init ()  {
-    
+        
     }
 
     function render () {

@@ -1,0 +1,1 @@
+exports.contactMailer = require('./routes/contactMailer');
